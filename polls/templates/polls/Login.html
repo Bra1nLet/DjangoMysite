@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autorithation</title>
+</head>
+<body>
+   <form method="post">
+        {% csrf_token %}
+        Username : <input type="text" name="user" ><br><br>
+        Password : <input type="password" name = "pass"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
